@@ -1,0 +1,9 @@
+Absolute units:
+  px - pixels - one square of the screen (when scale is 100%)
+
+Relative units:
+  rem - font-size set to <html>...</html> element. Default is 16px
+  em - font-size of element, or set by parent element(s).
+  % - percent value OF PARENT element
+  vh - viewport height - 1vh -> 1% from vieport height, 100vh - 100% from vieport height
+  vw - viewport width - 1vw -> 1% from vieport width, 100vw - 100% from vieport width

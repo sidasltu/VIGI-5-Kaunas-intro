@@ -1,0 +1,42 @@
+Komandos kurias reikia atlikti darant bet kokią užduotį dirbant su kolegomis:
+1. $git checkout master - perkeliame git žymeklį į pagrindinė šaką, kur laikomas visas vystomas kodas.
+  Praktikoje ši šaka dažniausiai vadinasi "develop", ne retai sutiksite ir "main" ar "master šakas".
+
+2. $git pull - parsisiunčiame naujausią šios šakos[1.] versiją.
+
+3. $git checkout -b <šakos-pavadinimas-sufleruojantis-atliekamą-darbą> - sukuriama naują šaką ir iškart permetame git žymeklį į sukurtą šaką.
+
+4.  Atliekame užduoties darbus žingsneliais:
+  4.1 Parašome kodą, kuris atliko kažkokį darbą, apčiuopamą užduotį.
+  4.2 $git add . -> užfiksuojame, visus pakitusius failus (stage changes)
+  4.3 $git commit -m "žinutė apibūdinanti atliktą darbą" (commit changes)
+
+  4.1 - 4.3 veiksmai gali būti vykdomi daug kartų, mažais žingsneliais apibūdinantys ką ir kaip darote.
+
+5. Kuomet pilnai atlikome užduotį, rašome:
+  $git push --set-upstream origin <šakos-pavadinimas-sufleruojantis-atliekamą-darbą>
+  Tokiu būdu susiejame savo lokacios repozitorijos tašką su globalio repozitorijos šaka ir išsiunčiame pakitimus.
+
+6. Mums berašant kodą, pagrindinė šaka greičiausiai atsinaujino, ir yra naujesnės versijos, negu tuomet - kuomet nuo jos atsiskyrėme.
+Todėl reikia, atsisiųsti naujausią pagrindinės šakos versiją:
+  $git checkout <pagrindinė-šaka>
+  $git pull
+
+7. Atsinaujinus pagrindinę šaką persijungiame atgal į savają šaką:
+  $git checkout <šakos-pavadinimas-sufleruojantis-atliekamą-darbą>
+
+8. Sujungiame pagrindinę šaką su mūsų darbine šaka (pagrindinės šakos pakitimus pridedame mūsų darbinei šakai):
+  $git merge <pagrindinė-šaka>
+
+9. Jeigu sujungimo metu, iškilo konfliktų, tuomet reikia pasitarti su kolega/omis kuris keitė failus, kaip apjungti jūsų ir kolegos kodą.
+  Atlikus pakitimus, reikia VĖL atlikti [6.]-[9.] veikmus, nes tuo metu kol sprendėme konfliktus, vėl galėjo pagrindinė šaka atsinaujinti.
+
+10. Kuomet Esame įsitikinę jog, mūsų privati šaka yra sujungta su naujausia pagrindine šaka ir konfliktai išspręsti, paviešiname pakitimus:
+  $git push
+
+11. Kuriama "Pull request". Nustatome kokią šaką norime apjungti su kokia (dažniausiai norime savo darbinę šaką įjungti į pagrindinę šaką).
+Ir laukiame kolegų ar komandos vadovo pastabų/patviortinimo.
+  11.1 Gavus patvirtinimą - patvirtiname sujungimą ir ištriname globalią darbinę šaką.
+   Dažniausiai dėl patogumo išsitrinti galite ir privačią nebereikalingą šaką.
+  11.2 Gavu atmetimą ar pastabas - Ištaisome savo kodą ir tuomet atlikame veiksmus [6.]-[11.1] išskyrus [10.]. Komanda $git push automatiškai
+  atnaujina "Pull request"

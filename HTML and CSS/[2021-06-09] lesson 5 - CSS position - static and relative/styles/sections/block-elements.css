@@ -1,0 +1,18 @@
+.example-container>* {
+  border: 1px solid black;
+  margin: 5px 0;
+  background-color: lightpink;
+}
+
+.w-25 {
+  /* 25% of parent element width */
+  width: 25%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-75 {
+  width: 75%;
+}

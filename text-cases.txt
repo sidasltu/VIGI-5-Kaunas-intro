@@ -1,0 +1,5 @@
+kebab-case ->   labai-ilgas-zodis  | CSS klasėms, failų pavadinimams 
+snake_case ->   labai_ilgas_zodis
+camelCase  ->   labaiIlgasZodis
+pascalCase ->   LabaiIlgasZodis
+UPPER_CASE ->   LABAI_ILGAS_ZODIS

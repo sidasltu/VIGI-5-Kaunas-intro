@@ -1,0 +1,39 @@
+.text-red {
+  color: red;
+}
+
+.fz-20 {
+  font-size: 20px;
+}
+
+.ls-2 {
+  letter-spacing: 2px;
+}
+
+.td-underline {
+  text-decoration: underline;
+}
+
+.td-line-through {
+  text-decoration: line-through;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.lh-30 {
+  line-height: 30px;
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <!-- You should only have one <main> element in a single HTML file -->
+    <main class="container mb-60px">
+        <!-- You should only have one <h1> element in a single HTML file -->
+        <h1>Primary HTML elements</h1>
+        <p>
+            There are over 100 HTML elements, but most of them are out-dated or rarely used.
+            There are about 20 primary/common elements which every web developer should know
+            and use correctly.
+        </p>
+    </main>
+
+    <section class="container mb-60px">
+        <h2>What is HTML element?</h2>
+        <p>
+            HTML element is a special syntax, which purpose is to structure page and it's content.
+            Most HTML elements have opening and closing tag. Opening tag is wrap in diamond quotes: <br>
+            <strong>&lt;HTML tag name&gt;</strong> <br>
+            Closing tag is writen similary, but with slash before tag name: <br>
+            <strong>&lt;/HTML tag name&gt;</strong> <br> <br>
+            Everything between opening and closing tag is interpreted as children components. <br><br>
+            Attributes are additional setting for HTML element. They should be writen in element's opening tag.
+            There are common attributes for all elements like: class, style, etc.. Some HTML elements have specific
+            attributes, for instance: <br>
+            <strong>&lt;img&gt;</strong> has 'alt' and 'src' attributes <br>
+            <strong>&lt;a&gt;</strong> has 'href' and 'target' attributes <br>
+            ... etc.
+        </p>
+        <img src="./images/html-element.png" alt="HTML element stucture" class="img-html-structure">
+    </section>
+
+    <section class="container mb-60px">
+        <h2>Inline Elements</h2>
+        <p>
+            Inline elements are interpreted as text. These elements can't have spacing settings. This kind of elements
+            are positioned from left to right, and only if there are no more space, they are placed in the next row.
+        </p>
+        <article class="sub-section">
+            <h3>Most common style properties for inline elements</h3>
+            <ul>
+                <li>color - text color</li>
+                <li>text-align - horizontal alignment</li>
+                <li>vertical-align - vertical alignment</li>
+                <li>letter-spacing - spacing between letters</li>
+                <li>line-height - height of one line</li>
+                <li>... etc.</li>
+            </ul>
+            <p>
+                All typography(text) style properties are applied to element and all of it's descending children!
+            </p>
+        </article>
+        <article class="sub-section">
+            <h3>Most common inline elements</h3>
+            <ul>
+                <li>span - basic inline element for text</li>
+                <li>a - reference element to another page or page section</li>
+                <li>img - image</li>
+                <li>strong - element to emphasize(bold) text</li>
+                <li>em - element to make inner text italic(oblique)</li>
+                <li>... etc.</li>
+            </ul>
+        </article>
+        <article class="sub-section">
+            <h3>Examples</h3>
+            <p>
+                <span class="text-red">color: red;</span>
+                <span class="fz-20">font-size: 20px;</span>
+                <span class="ls-2">letter-spacing: 2px;</span>
+                <span class="td-underline">text-decoration: underline;</span>
+                <span class="td-line-through">text-decoration: line-through;</span>
+            </p>
+            <h4>text-align: left</h4>
+            <p class="text-left">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, laboriosam quae natus autem officia
+                ut sint voluptatibus reprehenderit nostrum fuga maxime sequi ullam, beatae unde culpa cumque qui at
+                quis! Ratione amet laboriosam explicabo ut beatae dolores! Atque nam accusantium expedita, illo maxime
+                sunt exercitationem ipsa dolores. Molestias eius reprehenderit nihil officia atque quidem sequi corrupti
+                porro exercitationem accusantium quia non, obcaecati labore nesciunt at iste voluptatum neque ipsum nam
+                enim optio, possimus quibusdam. Tempora ipsum quibusdam, voluptatem exercitationem architecto dolorum ex
+                numquam eos, perspiciatis expedita ratione, vel modi nemo iste officia quisquam! Qui vero id aliquam
+                facilis, illo debitis.
+            </p>
+            <h4>text-align: right</h4>
+            <p class="text-right">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, laboriosam quae natus autem officia
+                ut sint voluptatibus reprehenderit nostrum fuga maxime sequi ullam, beatae unde culpa cumque qui at
+                quis! Ratione amet laboriosam explicabo ut beatae dolores! Atque nam accusantium expedita, illo maxime
+                sunt exercitationem ipsa dolores. Molestias eius reprehenderit nihil officia atque quidem sequi corrupti
+                porro exercitationem accusantium quia non, obcaecati labore nesciunt at iste voluptatum neque ipsum nam
+                enim optio, possimus quibusdam. Tempora ipsum quibusdam, voluptatem exercitationem architecto dolorum ex
+                numquam eos, perspiciatis expedita ratione, vel modi nemo iste officia quisquam! Qui vero id aliquam
+                facilis, illo debitis.
+            </p>
+            <h4>text-align: center</h4>
+            <p class="text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, laboriosam quae natus autem officia
+                ut sint voluptatibus reprehenderit nostrum fuga maxime sequi ullam, beatae unde culpa cumque qui at
+                quis! Ratione amet laboriosam explicabo ut beatae dolores! Atque nam accusantium expedita, illo maxime
+                sunt exercitationem ipsa dolores. Molestias eius reprehenderit nihil officia atque quidem sequi corrupti
+                porro exercitationem accusantium quia non, obcaecati labore nesciunt at iste voluptatum neque ipsum nam
+                enim optio, possimus quibusdam. Tempora ipsum quibusdam, voluptatem exercitationem architecto dolorum ex
+                numquam eos, perspiciatis expedita ratione, vel modi nemo iste officia quisquam! Qui vero id aliquam
+                facilis, illo debitis.
+            </p>
+            <h4>text-align: justify</h4>
+            <p class="text-justify">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, laboriosam quae natus autem officia
+                ut sint voluptatibus reprehenderit nostrum fuga maxime sequi ullam, beatae unde culpa cumque qui at
+                quis! Ratione amet laboriosam explicabo ut beatae dolores! Atque nam accusantium expedita, illo maxime
+                sunt exercitationem ipsa dolores. Molestias eius reprehenderit nihil officia atque quidem sequi corrupti
+                porro exercitationem accusantium quia non, obcaecati labore nesciunt at iste voluptatum neque ipsum nam
+                enim optio, possimus quibusdam. Tempora ipsum quibusdam, voluptatem exercitationem architecto dolorum ex
+                numquam eos, perspiciatis expedita ratione, vel modi nemo iste officia quisquam! Qui vero id aliquam
+                facilis, illo debitis.
+            </p>
+            <h4>line-height: 30px</h4>
+            <p class="lh-30">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id sequi quasi culpa voluptatibus labore
+                ratione ad distinctio deserunt. Harum rem dolor nemo libero natus aliquid error est veniam voluptas
+                deleniti numquam, ab odit excepturi officiis eum. Veritatis quibusdam labore excepturi voluptates ullam
+                natus dolore ea, unde atque amet distinctio at ab quisquam explicabo inventore. Magni voluptatem
+                praesentium quasi alias totam, debitis ad cupiditate rerum deleniti sequi tempore harum! Quidem sit
+                nostrum minus dolores explicabo blanditiis et asperiores ipsum, quasi alias minima dolor reprehenderit
+                obcaecati accusamus dignissimos hic eligendi distinctio aperiam incidunt inventore fugiat! Possimus
+                asperiores earum dolorum a? Sapiente, tenetur!
+            </p>
+        </article>
+    </section>
+
+    <section class="container mb-60px">
+        <h2>Inline-block elements</h2>
+        <p>
+            Inline block elements behave as inline elements, but can have spacing and dimension properties.
+            Inline style properties are also applied for inline-block elements. <br>
+            The main diference is that content in inline-block elements is grouped and can't be moved to next line seperately.
+        </p>
+        <article>
+            <h3>Most common inline-block elements</h3>
+            <ul>
+                <li>input - user input field</li>
+                <li>text-area - user input text area</li>
+                <li>select - user input with options</li>
+            </ul>
+        </article>
+        <article>
+            <h3>Examples</h3>
+            <h4>Inline vs inline-block</h4>
+            <h5>Inline elements</h5>
+            <p>
+                <span class="inline-example">this is inline element</span>
+                <span class="inline-example">this is inline element</span>
+                <span class="inline-example">this is inline element</span>
+                <span class="inline-example">this is inline element</span>
+                <span class="inline-example">this is inline element</span>
+                <span class="inline-example">this is inline element</span>
+                <span class="inline-example">this is inline element</span>
+                <span class="inline-example">this is inline element</span>
+                <span class="inline-example">this is inline element</span>
+                <span class="inline-example">this is inline element</span>
+                <span class="inline-example">this is inline element</span>
+                <span class="inline-example">this is inline element</span>
+            </p>
+            <h5>Inline-block elements</h5>
+            <p>
+                <span class="inline-block-example">this is inline element</span>
+                <span class="inline-block-example">this is inline element</span>
+                <span class="inline-block-example">this is inline element</span>
+                <span class="inline-block-example">this is inline element</span>
+                <span class="inline-block-example">this is inline element</span>
+                <span class="inline-block-example">this is inline element</span>
+                <span class="inline-block-example">this is inline element</span>
+                <span class="inline-block-example">this is inline element</span>
+                <span class="inline-block-example">this is inline element</span>
+                <span class="inline-block-example">this is inline element</span>
+                <span class="inline-block-example">this is inline element</span>
+                <span class="inline-block-example">this is inline element</span>
+            </p>
+        </article>
+    </section>
+
+</body>
+
+</html>

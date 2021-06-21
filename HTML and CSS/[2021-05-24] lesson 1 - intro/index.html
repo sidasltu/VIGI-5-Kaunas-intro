@@ -1,0 +1,43 @@
+<html>
+
+<head>
+	<title>My First Page</title>
+	<!-- Tarp <style> tag'ų yra rašomas CSS (stilius) -->
+	<style>
+		/* ↙ tai ko ieškoti - selector */
+		h1 {
+			/* surastiems elementams bus pritaikomos stiliaus savybės
+			 išvardintos tarp garbanotų skliaustų */
+			/*  ↙ stiliaus savybės pavadinimas */
+			color: red;
+			/*          ↖ stiliaus savybės reikšmė */
+			font-size: 4em;
+		}
+
+		p {
+			/* color - nustato šrifto spalvą */
+			color: blue;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>My name is Zilvinas</h1>
+	<p>I like to eat, often.</p>
+	<button>Change btn style</button>
+
+	<!-- 
+		Script tagás laikomas pačioje apačioje turinio. Tai yra daromą, tam kad būtų užkrautas
+	visas HTML turinys, prieš vykdant JavaScript kodą.
+	-->
+	<!-- Tarp <script> tag'ų yra rašomas JavaScript kodas (funkcionalumas) -->
+	<script>
+		const btn = document.querySelector('button');
+		btn.addEventListener('click', () => {
+			btn.style.color = 'white';
+			btn.style.background = 'black';
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+.inline-example {
+  display: inline;
+  background: lightcoral;
+  height: 30px;
+}
+
+.inline-block-example {
+  display: inline-block;
+  background: lightgreen;
+  height: 30px;
+  border: 2px solid black;
+}
